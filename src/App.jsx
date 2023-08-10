@@ -6,7 +6,7 @@ function App() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
+    const fetchData = () => {
       try {
         const response = await axios.get("https://dummyjson.com/products");
         setProducts(response.data.data);
